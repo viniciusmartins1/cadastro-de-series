@@ -10,32 +10,32 @@ namespace DIO.Series.Classes
         private List<Series> listaSeries = new List<Series>();
         public void Atualiza(int id, Series entidade)
         {
-            throw new NotImplementedException();
+            listaSeries[id] = entidade;
         }
 
-        public void Eclui(int id)
+        public void Exclui(int id)
         {
-            throw new NotImplementedException();
+            listaSeries[id].Excluir();
         }
 
         public void Insere(Series entidade)
         {
-            throw new NotImplementedException();
+            listaSeries.Add(entidade);
         }
 
         public List<Series> Lista()
         {
-            throw new NotImplementedException();
+            return listaSeries;
         }
 
         public int ProximoId()
         {
-            throw new NotImplementedException();
+            return listaSeries.Count;
         }
 
         public Series RetornaPorId(int id)
         {
-            throw new NotImplementedException();
+           return listaSeries[id];
         }
     }
 }
